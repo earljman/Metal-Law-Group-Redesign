@@ -9,10 +9,14 @@ require('typeface-open-sans')
 export default function (Vue) {
     Vue.component('Layout', DefaultLayout)
 
-    Vue.use(VueGoogleMaps, {
-        load: {
-            key: "AIzaSyCb-vFfgzPHRqPM5KwvY0gMcJ5PXk7zg-A",
-            libraries: "places" // necessary for places input
-        }
-    });
+    const googleMapsApiKey = process.env.GRIDSOME_GOOGLE_MAPS_API_KEY
+
+    if (googleMapsApiKey) {
+        Vue.use(VueGoogleMaps, {
+            load: {
+                key: googleMapsApiKey,
+                libraries: "places" // necessary for places input
+            }
+        });
+    }
 }

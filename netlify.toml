@@ -5,6 +5,7 @@
 [build.environment]
   NODE_VERSION = "18"
   NODE_OPTIONS = "--openssl-legacy-provider"
+  SECRETS_SCAN_OMIT_KEYS = "GRIDSOME_GOOGLE_MAPS_API_KEY"
 
 [template.environment]
   WORDPRESS_URL = "https://www.metallawgroup.com"
