@@ -9,31 +9,31 @@
 
 \:root 
 
-    /*----------  Define Primary & Secondary Font  ----------*/
+	/*----------  Define Primary & Secondary Font  ----------*/
 
-    /* Note: fonts must be imported in _font */
-    --font-primary: 'Open Sans', sans
-    // --font-secondary: 'Adobe Caslon Pro', 'Adobe Caslon Pro Self', serif
-    --font-secondary: 'Lusitana', serif
+	/* Note: fonts must be imported in _font */
+	--font-primary: 'Open Sans', sans
+	// --font-secondary: 'Adobe Caslon Pro', 'Adobe Caslon Pro Self', serif
+	--font-secondary: 'Lusitana', serif
 
-    /* ---------  Vertical Rhythm Grid (used for testing purposes) ----------*/    
-    // body
-    //     background-image: linear-gradient(#bbb 1px, transparent 1px)
-    //     background-size: 100% 9px   
+	/* ---------  Vertical Rhythm Grid (used for testing purposes) ----------*/    
+	// body
+	//     background-image: linear-gradient(#bbb 1px, transparent 1px)
+	//     background-size: 100% 9px   
 
 
 html, * 
-    font-family: var(--font-primary)
-    line-height: 1.8
-    color: var(--color-t-b)
+	font-family: var(--font-primary)
+	line-height: 1.8
+	color: var(--color-t-b)
 
 b, strong 
-    font-weight: bold
+	font-weight: bold
 
 h1, h2, h3, h4, h5, h6
-    font-family: var(--font-secondary)
-    font-weight: 400
-    color: var(--color-t-h)
+	font-family: var(--font-secondary)
+	font-weight: 400
+	color: var(--color-t-h)
 
 
 /*=============================================*/
@@ -42,41 +42,41 @@ h1, h2, h3, h4, h5, h6
 // to maintain vertical rhythm with spacing, use size values of .5rem increments.
 
 h1 
-    @include text(2xl)
-    // font-weight: 400
-    line-height: 4rem
-    margin-bottom: 1rem //trial
-    max-width: 40ch
+	@include text(2xl)
+	// font-weight: 400
+	line-height: 4rem
+	margin-bottom: 1rem //trial
+	max-width: 40ch
 
 h2 
-    @include text(xl)
-    font-variant: small-caps 
-    // font-weight: 500
-    line-height: 3rem
-    margin-bottom: 1rem //trial
-    letter-spacing: 0.08em;
+	@include text(xl)
+	font-variant: small-caps 
+	// font-weight: 500
+	line-height: 3rem
+	margin-bottom: 1rem //trial
+	letter-spacing: 0.08em
 
 h3 
-    @include text(xl)
-    // font-weight: 500
-    line-height: 2.5rem
-    margin-bottom: .5rem //trial
+	@include text(xl)
+	// font-weight: 500
+	line-height: 2.5rem
+	margin-bottom: .5rem //trial
 
 h4 
-    @include text(lg)
-    // font-weight: 600
-    line-height: 2rem
-    margin-bottom: .5rem //trial
+	@include text(lg)
+	// font-weight: 600
+	line-height: 2rem
+	margin-bottom: .5rem //trial
 
 h5 
-    @include text(md)
-    font-variant: small-caps 
-    // font-weight: 600
-    line-height: 2rem
-    margin-bottom: .5rem //trial
-    letter-spacing: 0.08em
-    font-variant-numeric: oldstyle-nums //idk why this doesnt work
-    font-feature-settings: "onum" //idk why this doesnt work
+	@include text(md)
+	font-variant: small-caps 
+	// font-weight: 600
+	line-height: 2rem
+	margin-bottom: .5rem //trial
+	letter-spacing: 0.08em
+	font-variant-numeric: oldstyle-nums //idk why this doesnt work
+	font-feature-settings: "onum" //idk why this doesnt work
 
 // h6 
 //     @include text(lg)
@@ -85,31 +85,31 @@ h5
 //     margin-bottom: .5rem //trial
 
 p, ul
-    @include text(md)
-    font-weight: 400
-    max-width: 40em //based on research
-    margin-bottom: 1rem
+	@include text(md)
+	font-weight: 400
+	max-width: 40em //based on research
+	margin-bottom: 1rem
 
 
 .p-small p, 
 .p-small li
-    @include text(sm)
-    font-weight: 400
+	@include text(sm)
+	font-weight: 400
 
 .p-nav *
-    @include text(md)
-    font-family: var(--font-secondary)
+	@include text(md)
+	font-family: var(--font-secondary)
 
 .p-copyright *
-    @include text(sm)
-    font-family: var(--font-secondary)
-    font-variant: small-caps
-    letter-spacing: 0.03em;
+	@include text(sm)
+	font-family: var(--font-secondary)
+	font-variant: small-caps
+	letter-spacing: 0.03em
 
 a 
-    text-decoration: none
-    color: var(--color-p)
-    // font-weight: 600
+	text-decoration: none
+	color: var(--color-p)
+	// font-weight: 600
 
 
 /*=============================================*/
@@ -121,24 +121,24 @@ a
 
 // This can be included in button selectors to style button text
 @mixin text-button 
-    color: var(--color-text-h)
-    font-weight: 400
-    @include text(md)
-    letter-spacing: 0.02em
-    text-transform: uppercase
+	color: var(--color-text-h)
+	font-weight: 400
+	@include text(md)
+	letter-spacing: 0.02em
+	text-transform: uppercase
 
 // This can be included in components to add a caption style
 @mixin text-caption 
-    font-family: var(--font-secondary)
-    font-variant: small-caps
-    color: var(--color-text-caption)
-    @include text(md)
+	font-family: var(--font-secondary)
+	font-variant: small-caps
+	color: var(--color-text-caption)
+	@include text(md)
 
 
 
 /*----------  Idk if this will be kept in here once we build the components section ----------*/
 .text-button
-    @include text-button
+	@include text-button
 
 .text-caption 
-    @include text-caption
+	@include text-caption

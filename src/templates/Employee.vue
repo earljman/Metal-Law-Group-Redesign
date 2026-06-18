@@ -78,83 +78,83 @@ export default {};
 
 <style lang="sass" scoped>
 
-    .employee
-        white-space: pre-line //magically converts '/n' to new lines
-    
-    .general
-        padding-top: var(--space-lg)
-        padding-bottom: var(--space-md)
-        border-bottom: 2px solid var(--color-a)
-        @include grid-main
-        max-width: 1200px
+	.employee
+		white-space: pre-line //magically converts '/n' to new lines
+	
+	.general
+		padding-top: var(--space-lg)
+		padding-bottom: var(--space-md)
+		border-bottom: 2px solid var(--color-a)
+		@include grid-main
+		max-width: 1200px
 
-        &>*
-            @include grid-full
+		&>*
+			@include grid-full
 
-        @include md
+		@include md
 
-            .general--photo
-                grid-column: 1 / 3
+			.general--photo
+				grid-column: 1 / 3
 
-            .general--info
-                grid-column: 3 / 7
-                margin-left: var(--space-lg)
+			.general--info
+				grid-column: 3 / 7
+				margin-left: var(--space-lg)
 
-            @include lg
-                padding-left: var(--space-sm)
-                padding-right: var(--space-sm)
+			@include lg
+				padding-left: var(--space-sm)
+				padding-right: var(--space-sm)
 
-                .general--photo
-                    grid-column: 1 / 4
+				.general--photo
+					grid-column: 1 / 4
 
-                .general--info
-                    grid-column: 4 / 13
+				.general--info
+					grid-column: 4 / 13
 
-        &--photo
-            margin: auto
-            width: 100%
-            max-width: 400px
+		&--photo
+			margin: auto
+			width: 100%
+			max-width: 400px
 
-        &--name
-            margin-bottom: 0
+		&--name
+			margin-bottom: 0
 
-        &--details
-            display: flex
-            width: 100%
-            flex-wrap: wrap
+		&--details
+			display: flex
+			width: 100%
+			flex-wrap: wrap
 
-            &>*
-                @include space-inline(var(--space-md))
-                flex-grow: 1
-                min-width: 10ch
+			&>*
+				@include space-inline(var(--space-md))
+				flex-grow: 1
+				min-width: 10ch
 
-    .bottom-container
-        padding-top: var(--space-md)
-        padding-bottom: var(--space-md)
+	.bottom-container
+		padding-top: var(--space-md)
+		padding-bottom: var(--space-md)
 
-        @include grid-main
-        max-width: 1200px
+		@include grid-main
+		max-width: 1200px
 
 
-        &>*
-            @include grid-full
+		&>*
+			@include grid-full
 
-        @include lg
-            padding-left: var(--space-sm)
-            padding-right: var(--space-sm)
-            .experience
-                grid-column: 1 / 10
+		@include lg
+			padding-left: var(--space-sm)
+			padding-right: var(--space-sm)
+			.experience
+				grid-column: 1 / 10
 
-            .additional-info
-                grid-column: 10 / 13
+			.additional-info
+				grid-column: 10 / 13
 
-    .additional-info
-        ul
-            padding-left: 20px
-            list-style: none
+	.additional-info
+		ul
+			padding-left: 20px
+			list-style: none
 
-            li
-                line-height: 2.5
-                
-            
+			li
+				line-height: 2.5
+				
+			
 </style>

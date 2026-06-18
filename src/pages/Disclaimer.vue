@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-    
+	
 .section-title
-    border-top: 2px solid var(--color-a)
+	border-top: 2px solid var(--color-a)
 </style>

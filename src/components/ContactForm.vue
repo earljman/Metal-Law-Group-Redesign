@@ -103,29 +103,30 @@ export default {
 <style lang="sass" scoped>
 
 .form
-    display: grid
-    grid-template-columns: 1fr
-    grid-auto-rows: min-content
-    grid-gap: var(--space-sm)
+	display: grid
+	grid-template-columns: 1fr
+	grid-auto-rows: min-content
+	grid-gap: var(--space-sm)
 
 
-    @include md
-        .submit
-            grid-column: 1 / -1
-            width: 25ch
-            margin-left: auto
+	@include md
+		.submit
+			grid-column: 1 / -1
+			width: 25ch
+			margin-left: auto
 
-    @include lg
+	@include lg
 
-        grid-template-columns: 1fr 1fr
-        max-width: 600px
+		grid-template-columns: 1fr 1fr
+		max-width: 600px
 
 
-        .name
-            grid-column: 1/-1
+		.name
+			grid-column: 1/-1
 
-        .message
-            grid-column: 1/-1
-        
+		.message
+			grid-column: 1/-1
+		
 
-    </style>
+	
+</style>

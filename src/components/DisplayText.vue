@@ -28,24 +28,24 @@ export default {};
 
 .display-text
 
-    &--content
-        margin: auto
+	&--content
+		margin: auto
 
 
-    &--container
-        margin: var(--space-lg) 0
-        padding: var(--space-md)
-        background-color: var(--color-a)
-        max-width: 768px
-        display: flex
-        justify-content: center
+	&--container
+		margin: var(--space-lg) 0
+		padding: var(--space-md)
+		background-color: var(--color-a)
+		max-width: 768px
+		display: flex
+		justify-content: center
 
-        @include md
-            margin-left: var(--space-lg)
-            margin-right: var(--space-lg)
+		@include md
+			margin-left: var(--space-lg)
+			margin-right: var(--space-lg)
 
-            @include lg
-                margin-left: auto
-                margin-right: auto
+			@include lg
+				margin-left: auto
+				margin-right: auto
 
 </style>

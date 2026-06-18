@@ -13,11 +13,12 @@
 						name
 						id
 						v-model="searchTerm"
+						disabled
 					/>
 				</div>
 			</template>
 		</PageTitle>
-		<SectionTitle v-show="searchResults[0]">Results</SectionTitle>
+		<SectionTitle v-show="searchResults.length">Results</SectionTitle>
 		<div class="results">
 			<EmployeeCardGrid>
 				<EmployeeCard
@@ -34,64 +35,21 @@
 	</Layout>
 </template>
 
-<static-query>
-query Posts {
-    posts: allEmployee {
-        edges {
-            node {
-                id
-                title
-                date
-                path
-                acf {
-                    name
-                    email
-                    photo
-                    phoneNumber
-                    title
-                    experience
-                    barAdmissions
-                    practiceAreas
-                    education    
-                }   
-            }
-        }
-    }
-}
-</static-query>
-
 <script>
 import SectionTitle from "~/components/SectionTitle.vue";
 import PageTitle from "~/components/PageTitle.vue";
 import EmployeeCard from "~/components/EmployeeCard.vue";
 import EmployeeCardGrid from "~/components/EmployeeCardGrid.vue";
 
-import Flexsearch from "flexsearch";
-
 export default {
 	data() {
 		return {
-			index: null,
 			searchTerm: ""
 		};
 	},
-	beforeMount() {
-		this.index = new Flexsearch({
-			tokenize: "forward",
-			doc: {
-				id: "id",
-				field: ["title", "excerpt"]
-			}
-		});
-		this.index.add(this.$static.posts.edges.map(e => e.node));
-	},
 	computed: {
 		searchResults() {
-			if (this.index === null || this.searchTerm.length < 1) return [];
-			return this.index.search({
-				query: this.searchTerm,
-				limit: 10
-			});
+			return [];
 		}
 	},
 
@@ -108,15 +66,15 @@ export default {
 
 
 .search-text
-    margin: 0 auto var(--space-sm)
-    text-align: center    
+	margin: 0 auto var(--space-sm)
+	text-align: center    
 
 input[type="search"]
-    width: 350px
-    
+	width: 350px
+	
 .results
-    border-top: 1px solid var(--color-a)
-    padding-bottom: var(--space-lg)
+	border-top: 1px solid var(--color-a)
+	padding-bottom: var(--space-lg)
 
 
 </style>

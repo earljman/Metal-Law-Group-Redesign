@@ -18,22 +18,22 @@ export default {};
 <style lang="sass" scoped>
 
 .section-title-container
-    width: 100vw
-    border-top: 0
-    border-bottom: 2px solid var(--color-a)
+	width: 100vw
+	border-top: 0
+	border-bottom: 2px solid var(--color-a)
 
 .section-title
 
-    text-align: center
-    padding: var(--space-sm) 0
-    @include grid-main
-    place-items: center
+	text-align: center
+	padding: var(--space-sm) 0
+	@include grid-main
+	place-items: center
 
-    &>*
-        @include grid-full
-        @include space-stack(var(--space-md))
+	&>*
+		@include grid-full
+		@include space-stack(var(--space-md))
 
-    &--detail
-        max-width: 40ch
+	&--detail
+		max-width: 40ch
 
 </style>

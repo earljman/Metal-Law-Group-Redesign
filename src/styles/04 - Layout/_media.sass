@@ -10,27 +10,27 @@ $screen-md-min: 768px // Tablets
 $screen-lg-min: 992px // Laptops
 $screen-xl-min: 1440px // Desktop Computers
 
-    
+	
 /*===================================================
 /*=      Create Mixin to @include Media Query       =
 /*=================================================*/        
 
 @mixin md
-    @media only screen and (min-width: #{$screen-md-min})
-        @content
+	@media only screen and (min-width: #{$screen-md-min})
+		@content
 
 @mixin lg
-    @media only screen and (min-width: #{$screen-lg-min})
-        @content
+	@media only screen and (min-width: #{$screen-lg-min})
+		@content
 
 @mixin xl
-    @media only screen and (min-width: #{$screen-xl-min})  
-        @content
+	@media only screen and (min-width: #{$screen-xl-min})  
+		@content
 
 @mixin portrait
-    @media only screen and (orientation: portrait)
-        @content
-        
+	@media only screen and (orientation: portrait)
+		@content
+		
 @mixin landscape
-    @media only screen and (orientation: landscape)
-        @content
+	@media only screen and (orientation: landscape)
+		@content

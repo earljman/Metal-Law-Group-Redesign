@@ -123,62 +123,62 @@ export default {
 
 .testimonials
 
-    &--container
-        animation: fadein 1.5s;
-        border-radius: 1px
-        margin: var(--space-md) var(--space-xs) var(--space-sm)
-        padding: var(--space-md) 6vw var(--space-sm)
-        background-color: var(--color-a)
-        max-width: 768px
-        display: flex
-        justify-content: center
-        height: max-content // adjust if necessary
-        
-        
-        @include md
-            margin-top: var(--space-lg)
-            margin-left: var(--space-lg)
-            margin-right: var(--space-lg)
+	&--container
+		animation: fadein 1.5s
+		border-radius: 1px
+		margin: var(--space-md) var(--space-xs) var(--space-sm)
+		padding: var(--space-md) 6vw var(--space-sm)
+		background-color: var(--color-a)
+		max-width: 768px
+		display: flex
+		justify-content: center
+		height: max-content // adjust if necessary
+		
+		
+		@include md
+			margin-top: var(--space-lg)
+			margin-left: var(--space-lg)
+			margin-right: var(--space-lg)
 
-            @include lg
-                margin-left: auto
-                margin-right: auto
+			@include lg
+				margin-left: auto
+				margin-right: auto
 
-    &--content
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
+	&--content
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
 
-    &--quote
-        margin-bottom: var(--space-md)
-        
+	&--quote
+		margin-bottom: var(--space-md)
+		
 
-    &--selector
-        display: flex
-        flex-direction: row
-        justify-content: center
-        margin-bottom: var(--space-lg)
+	&--selector
+		display: flex
+		flex-direction: row
+		justify-content: center
+		margin-bottom: var(--space-lg)
 
 
 
-        .indicator
-            @include transition
-            @include space-inline(var(--space-xs))
-            height: 5px
-            width: 48px
-            background-color: var(--color-a)
-            border-radius: 1px
+		.indicator
+			@include transition
+			@include space-inline(var(--space-xs))
+			height: 5px
+			width: 48px
+			background-color: var(--color-a)
+			border-radius: 1px
 
-        .active
-            background-color: var(--color-p)
+		.active
+			background-color: var(--color-p)
 
 
 @keyframes fadein
-    from 
-        opacity: 0
-    to
-        opacity: 1
+	from 
+		opacity: 0
+	to
+		opacity: 1
 
 
 </style>

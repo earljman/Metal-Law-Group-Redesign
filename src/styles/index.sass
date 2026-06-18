@@ -14,9 +14,9 @@
 /*===============================================*/
 
 html
-    background-color: var(--color-bg-l) // Check default colors exists
-    // background-color: var(--color-N030) // Check colors file exist
-    // background-color: red // Check styles are connected
+	background-color: var(--color-bg-l) // Check default colors exists
+	// background-color: var(--color-N030) // Check colors file exist
+	// background-color: red // Check styles are connected
 
 /*===============================================*/
 /*=            3) Style Guide Styles            =*/
@@ -27,7 +27,7 @@ html
 //     min-height: var(--space-lg) 
 //     padding: var(--space-sm)
 //     text-align: center
-    
+	
 //     h4
 //         color: var(--color-text-h-l)
 
@@ -46,7 +46,7 @@ html
 // //     grid-column: 1/3
 // //     justify-self: center
 // //     //border: 1px solid red
-    
+	
 // //     @include md
 // //         grid-column: 1/7
 
@@ -60,63 +60,63 @@ html
 
 
 body
-    max-width: 100vw
-    overflow-x: hidden
+	max-width: 100vw
+	overflow-x: hidden
 
 hr
-    margin: var(--space-md) auto
-    background-color: var(--color-acc-l)
-    color: var(--color-acc-l)
-    height: 1px
-    border: none
-    max-width: 90vw
+	margin: var(--space-md) auto
+	background-color: var(--color-acc-l)
+	color: var(--color-acc-l)
+	height: 1px
+	border: none
+	max-width: 90vw
 
 button, input[type="submit"]
-    background-color: var(--color-b)
-    border: 2px solid var(--color-p)
-    border-radius: 3px
-    line-height: 3 //change the height in a non-buggy way
-    padding: 0 1.5rem
-    cursor: pointer
+	background-color: var(--color-b)
+	border: 2px solid var(--color-p)
+	border-radius: 3px
+	line-height: 3 //change the height in a non-buggy way
+	padding: 0 1.5rem
+	cursor: pointer
 
 
 
 
 form
 
-    ::placeholder
-        color: #9a9a9a
-        font-weight: 600
-        opacity: .85
+	::placeholder
+		color: #9a9a9a
+		font-weight: 600
+		opacity: .85
 
-    textarea
-        height: 30vh
+	textarea
+		height: 30vh
 
 input, textarea
-    transition: color,opacity, border .4s,.4s ease
-    border: 2px solid var(--color-u)
-    border-radius: 3px
-    line-height: 3
-    padding: 0 1rem
-    color: var(--color-t-b)
+	transition: color,opacity, border .4s,.4s ease
+	border: 2px solid var(--color-u)
+	border-radius: 3px
+	line-height: 3
+	padding: 0 1rem
+	color: var(--color-t-b)
 
-    &:focus
-        border: 2px solid var(--color-p)
+	&:focus
+		border: 2px solid var(--color-p)
 
 @mixin transition
-    transition: color,opacity, border .4s,.4s ease
+	transition: color,opacity, border .4s,.4s ease
 
 
 
 \:root
-    --max-width: 1200px
+	--max-width: 1200px
 
 
 @mixin full-bleed
-    // full bleed properties. not sure about it yet
-    left: 50%
-    margin-left: -51vw
-    margin-right: -51vw
-    position: relative
-    right: 50%
-    width: 102vw
+	// full bleed properties. not sure about it yet
+	left: 50%
+	margin-left: -51vw
+	margin-right: -51vw
+	position: relative
+	right: 50%
+	width: 102vw

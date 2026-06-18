@@ -1,6 +1,10 @@
 [build]
   publish = "dist"
-  command = "gridsome build"
-  
+  command = "yarn build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NODE_OPTIONS = "--openssl-legacy-provider"
+
 [template.environment]
   WORDPRESS_URL = "https://www.metallawgroup.com"

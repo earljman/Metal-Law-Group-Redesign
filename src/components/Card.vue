@@ -50,55 +50,55 @@ export default {
 
 .card-wrapper
 
-    width: 100%
-    padding-top: var(--space-lg) 
-    padding-bottom: var(--space-md)
+	width: 100%
+	padding-top: var(--space-lg) 
+	padding-bottom: var(--space-md)
 
-    @include md
-        padding-left:  var(--space-sm)
-        padding-right:  var(--space-sm)
+	@include md
+		padding-left:  var(--space-sm)
+		padding-right:  var(--space-sm)
 
-    // &:nth-child(odd) .card
-    //     justify-content: flex-end
-    // &:nth-child(even) .card
-    //     justify-content: flex-start
+	// &:nth-child(odd) .card
+	//     justify-content: flex-end
+	// &:nth-child(even) .card
+	//     justify-content: flex-start
 
 
 
 .card
-    display: flex
-    flex-direction: column
-    height: 100%
-    justify-content: center
+	display: flex
+	flex-direction: column
+	height: 100%
+	justify-content: center
 
-    &--title
-        margin-bottom: var(--space-sm)
+	&--title
+		margin-bottom: var(--space-sm)
 
-    &--detail
-        max-width: 400px
+	&--detail
+		max-width: 400px
 
-    &--info
-        margin-bottom: var(--space-sm)
-        @include md
-            width: 40ch // keeps card size consistent
+	&--info
+		margin-bottom: var(--space-sm)
+		@include md
+			width: 40ch // keeps card size consistent
 
-    &--arrow
-        align-self: flex-end
-        margin-left: var(--space-sm)
-
-
-    &--icon
-        margin-bottom: var(--space-xs)
-        width: 40px
+	&--arrow
+		align-self: flex-end
+		margin-left: var(--space-sm)
 
 
-    // when there's 2 columns, change the layout. See CardGrid.vue
-    @include md
-        flex-direction: row
-        margin: 0 var(--space-md)
+	&--icon
+		margin-bottom: var(--space-xs)
+		width: 40px
 
-        &--icon
-            margin-right: var(--space-md)    
+
+	// when there's 2 columns, change the layout. See CardGrid.vue
+	@include md
+		flex-direction: row
+		margin: 0 var(--space-md)
+
+		&--icon
+			margin-right: var(--space-md)    
 
 
 

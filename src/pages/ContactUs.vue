@@ -120,102 +120,102 @@ export default {
 
 <style lang="sass" scoped>
 
-    section
-        padding: var(--space-md) 0 var(--space-lg)
+	section
+		padding: var(--space-md) 0 var(--space-lg)
 
-    .contact-info--container
-        border-bottom: 2px solid var(--color-a)
+	.contact-info--container
+		border-bottom: 2px solid var(--color-a)
 
-    .contact-info
-        @include grid-main
-        justify-content: center
+	.contact-info
+		@include grid-main
+		justify-content: center
 
-        max-width: var(--max-width)
-
-
-        @include lg 
-            padding-top: var(--space-lg)
-
-        .form--container
-            @include grid-full
-            width: 100%
-
-            @include lg
-                grid-column: 1 / 7
-
-        .info
-            margin-top: var(--space-md)
-            
-            @include grid-full
-
-            @include lg
-                margin-top: 0
-                grid-column: 7 / 13
-                padding-left: var(--space-md)
-
-            &--description
-                margin-bottom: var(--space-sm)
-
-    .directions
-        @include grid-main
-        justify-content: center
-        max-width: var(--max-width)
+		max-width: var(--max-width)
 
 
-        @include lg 
-            padding-top: var(--space-lg)
+		@include lg 
+			padding-top: var(--space-lg)
 
-        &--map
-            grid-column: 1 / -1
-            border: 3px solid var(--color-a)
-            color: var(--color-a)
-            height: 42vw
-            width: 100%
-            max-height: 315px
-            // max-width: 560px
-            text-align: center
-            margin: 0 auto var(--space-sm)
-            display: flex
-            align-content: stretch
-            justify-content: space-between        
+		.form--container
+			@include grid-full
+			width: 100%
 
-            *
-                flex-grow: 1
+			@include lg
+				grid-column: 1 / 7
 
-            @include lg
-                grid-column: 1 / 7
+		.info
+			margin-top: var(--space-md)
+			
+			@include grid-full
 
-        &--parking
-            grid-column: 1 / -1
-            margin-bottom: var(--space-md)
+			@include lg
+				margin-top: 0
+				grid-column: 7 / 13
+				padding-left: var(--space-md)
 
-            h5
-                display: inline-block
-            
-            td
-                @include text(sm)
-                padding-right: var(--space-xs)
-                vertical-align: top
-                border-top: 1px solid var(--color-a)
+			&--description
+				margin-bottom: var(--space-sm)
 
-            thead td
-                font-weight: 600
-                padding: var(--space-xs) 0
-
-            @include lg
-                grid-column: 1 / 7
-
-        &--instructions
-            grid-column: 1 / -1
-            width: 100%
-
-            @include lg
-                grid-column: 7 / 13
-                grid-row: 1/3
-                padding: 0 var(--space-md)
-                margin-top: -10px
+	.directions
+		@include grid-main
+		justify-content: center
+		max-width: var(--max-width)
 
 
+		@include lg 
+			padding-top: var(--space-lg)
 
-            
+		&--map
+			grid-column: 1 / -1
+			border: 3px solid var(--color-a)
+			color: var(--color-a)
+			height: 42vw
+			width: 100%
+			max-height: 315px
+			// max-width: 560px
+			text-align: center
+			margin: 0 auto var(--space-sm)
+			display: flex
+			align-content: stretch
+			justify-content: space-between        
+
+			*
+				flex-grow: 1
+
+			@include lg
+				grid-column: 1 / 7
+
+		&--parking
+			grid-column: 1 / -1
+			margin-bottom: var(--space-md)
+
+			h5
+				display: inline-block
+			
+			td
+				@include text(sm)
+				padding-right: var(--space-xs)
+				vertical-align: top
+				border-top: 1px solid var(--color-a)
+
+			thead td
+				font-weight: 600
+				padding: var(--space-xs) 0
+
+			@include lg
+				grid-column: 1 / 7
+
+		&--instructions
+			grid-column: 1 / -1
+			width: 100%
+
+			@include lg
+				grid-column: 7 / 13
+				grid-row: 1/3
+				padding: 0 var(--space-md)
+				margin-top: -10px
+
+
+
+			
 </style>

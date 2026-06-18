@@ -20,11 +20,11 @@ export default {
 
 <style lang="sass" scoped>
 .container
-    min-height: 70vh
-    display: flex
-    .section-title
-        border-top: 2px solid var(--color-a)
-        
+	min-height: 70vh
+	display: flex
+	.section-title
+		border-top: 2px solid var(--color-a)
+		
 
 
 </style>

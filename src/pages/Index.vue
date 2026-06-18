@@ -136,71 +136,71 @@ export default {
 
 
 
-    .our-services
-        border-bottom: 2px solid var(--color-a)
-    
-    .get-in-touch--container
-        border-bottom: 2px solid var(--color-a)
-    .get-in-touch
-        padding: var(--space-md) 0
-        display: flex
-        flex-direction: column
-        justify-content: center
+	.our-services
+		border-bottom: 2px solid var(--color-a)
+	
+	.get-in-touch--container
+		border-bottom: 2px solid var(--color-a)
+	.get-in-touch
+		padding: var(--space-md) 0
+		display: flex
+		flex-direction: column
+		justify-content: center
 
-        @include grid-main
+		@include grid-main
 
-        &>*
-            @include grid-full
+		&>*
+			@include grid-full
 
-        .info
-            width: 100%
-            margin-bottom: var(--space-sm)
-            height: 2rem
-
-
-            tr
-                height: 30%
+		.info
+			width: 100%
+			margin-bottom: var(--space-sm)
+			height: 2rem
 
 
-            *
-                vertical-align: top
-
-            .info--detail
-                text-align: right
-    
+			tr
+				height: 30%
 
 
+			*
+				vertical-align: top
 
-
-            &>*
-                max-width: 100%
+			.info--detail
+				text-align: right
+	
 
 
 
-        @include md
-            padding-top: var(--space-md) 
+
+			&>*
+				max-width: 100%
 
 
-            @include lg
-                // display: grid
-                // grid-template-columns: 1fr 44vw 44vw 1fr
-                padding-top: var(--space-lg)
 
-                &>*
-                    padding: 0 var(--space-md)
-
-                .info--container
-                    grid-column: 1 / 7
-
-                .info
-                    padding-left: var(--space-sm)
-                    justify-self: end
-                    max-width: 600px
+		@include md
+			padding-top: var(--space-md) 
 
 
-                .form-component
+			@include lg
+				// display: grid
+				// grid-template-columns: 1fr 44vw 44vw 1fr
+				padding-top: var(--space-lg)
 
-                    grid-column: 7 / 13
+				&>*
+					padding: 0 var(--space-md)
+
+				.info--container
+					grid-column: 1 / 7
+
+				.info
+					padding-left: var(--space-sm)
+					justify-self: end
+					max-width: 600px
+
+
+				.form-component
+
+					grid-column: 7 / 13
 
 
 

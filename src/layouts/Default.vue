@@ -32,6 +32,6 @@ export default {
 <style lang="sass">
 
 .layout
-    display: contents
+	display: contents
 
 </style>

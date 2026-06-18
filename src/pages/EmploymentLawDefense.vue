@@ -113,33 +113,33 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-    .overview
-        padding-top: var(--space-lg) 
-        padding-bottom: var(--space-md) 
-        margin: auto
-        max-width: 88vw
-        display: flex
-        flex-wrap: wrap
-        justify-content: center
+	.overview
+		padding-top: var(--space-lg) 
+		padding-bottom: var(--space-md) 
+		margin: auto
+		max-width: 88vw
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
 
-        &--youtube
-            height: 60vw
-            width: 88vw
-            margin-top: 0
-            margin-bottom:  var(--space-md) 
+		&--youtube
+			height: 60vw
+			width: 88vw
+			margin-top: 0
+			margin-bottom:  var(--space-md) 
 
-            @include md
-                max-height: 315px
-                max-width: 560px
+			@include md
+				max-height: 315px
+				max-width: 560px
 
-            @include lg
-                margin-left: var(--space-md)
-                margin-right: var(--space-lg)
-        &--text
-            max-width: 400px
-        
+			@include lg
+				margin-left: var(--space-md)
+				margin-right: var(--space-lg)
+		&--text
+			max-width: 400px
+		
 
-    .overview--container, .employee-lawsuit-prevention, .services
-        border-bottom: 2px solid var(--color-a)
-            
+	.overview--container, .employee-lawsuit-prevention, .services
+		border-bottom: 2px solid var(--color-a)
+			
 </style>

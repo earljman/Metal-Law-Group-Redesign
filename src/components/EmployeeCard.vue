@@ -49,42 +49,42 @@ export default {
 <style lang="sass" scoped>
 
 .card-wrapper
-    width: 100%
-    padding: var(--space-lg) var(--space-sm) var(--space-md)
+	width: 100%
+	padding: var(--space-lg) var(--space-sm) var(--space-md)
 
 .card
-    display: flex
-    flex-direction: column
-    height: 100%
-    justify-content: center
+	display: flex
+	flex-direction: column
+	height: 100%
+	justify-content: center
 
-    &--photo
-        max-width: 200px
+	&--photo
+		max-width: 200px
 
-    &--title
+	&--title
 
-    &--detail
-        max-width: 400px
+	&--detail
+		max-width: 400px
 
-    &--info
-        margin-bottom: var(--space-md)
-        width: 30ch // keeps card size consistent
+	&--info
+		margin-bottom: var(--space-md)
+		width: 30ch // keeps card size consistent
 
-    &--arrow
-        align-self: flex-end
-        margin-left: var(--space-sm)
-     
+	&--arrow
+		align-self: flex-end
+		margin-left: var(--space-sm)
+	
 
-    &--photo
-        margin-bottom: var(--space-xs)
+	&--photo
+		margin-bottom: var(--space-xs)
 
 
-    // when there's 2 columns, change the layout. See CardGrid.vue
-    @include lg
-        flex-direction: row
-        margin: 0 var(--space-md)
+	// when there's 2 columns, change the layout. See CardGrid.vue
+	@include lg
+		flex-direction: row
+		margin: 0 var(--space-md)
 
-        &--photo
-            margin-right: var(--space-md)    
+		&--photo
+			margin-right: var(--space-md)    
 
 </style>

@@ -3,7 +3,7 @@
     "private": true,
     "scripts": {
         "start": "gridsome develop",
-        "build": "gridsome build",
+        "build": "NODE_OPTIONS=--openssl-legacy-provider gridsome build",
         "develop": "gridsome develop",
         "explore": "gridsome explore",
         "styles": "parcel src/styles/index.html"
@@ -18,8 +18,11 @@
         "vue2-google-maps": "^0.10.7"
     },
     "devDependencies": {
-        "node-sass": "^4.12.0",
+        "sass": "1.77.8",
         "sass-loader": "^7.1.0",
         "style-resources-loader": "^1.2.1"
+    },
+    "resolutions": {
+        "sharp": "^0.32.6"
     }
 }

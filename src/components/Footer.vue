@@ -115,84 +115,84 @@ export default {
 
 <style lang="sass" scoped>
 
-    .footer
-        // border: 1px solid red //* for development, delete later
-        justify-self: center
-        background-color: var(--color-b-alt)
-        width: 100vw
-        display: flex
-        flex-direction: column
-        align-items: center
-        padding-top: var(--space-md)
-        
-        &>*
-            max-width: 1400px
+	.footer
+		// border: 1px solid red //* for development, delete later
+		justify-self: center
+		background-color: var(--color-b-alt)
+		width: 100vw
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding-top: var(--space-md)
+		
+		&>*
+			max-width: 1400px
 
-            @include lg
-                padding: 0 6vw
+			@include lg
+				padding: 0 6vw
 
-        *
-            color: white
+		*
+			color: white
 
-        &--nav
-            display: flex
-            width: 100%
-            justify-content: space-around
-            justify-items: center
-            flex-wrap: wrap
-
-
-            h5
-                color: var(--color-t-h-alt)
+		&--nav
+			display: flex
+			width: 100%
+			justify-content: space-around
+			justify-items: center
+			flex-wrap: wrap
 
 
-        &--logo
-            text-align: center
-            width: 300px
-            max-width: 70vw
-            margin-bottom: var(--space-md)
+			h5
+				color: var(--color-t-h-alt)
 
-            @include md
-                margin-bottom: var(--space-sm)
 
-            @include lg
-                width: 200px
-                margin-right: var(--space-xl)
+		&--logo
+			text-align: center
+			width: 300px
+			max-width: 70vw
+			margin-bottom: var(--space-md)
 
-        &--links
-            display: flex
-            flex-grow: 4
-            justify-content: center
-            flex-wrap: wrap
-            max-width: 88vw
-            margin-bottom: var(--space-sm)
+			@include md
+				margin-bottom: var(--space-sm)
 
-            @include landscape
-                justify-content: space-between
+			@include lg
+				width: 200px
+				margin-right: var(--space-xl)
 
-            .footer--submenu
-                min-width: 200px
-                flex-grow: 1
+		&--links
+			display: flex
+			flex-grow: 4
+			justify-content: center
+			flex-wrap: wrap
+			max-width: 88vw
+			margin-bottom: var(--space-sm)
 
-            ul
-                padding: 0
+			@include landscape
+				justify-content: space-between
 
-        &--social ul
-            display: flex
-            min-width: 200px
-            flex-grow: 2
-            justify-content: center
+			.footer--submenu
+				min-width: 200px
+				flex-grow: 1
 
-            li
-                @include space-inline(var(--space-xs))
+			ul
+				padding: 0
 
-        .copyright
-            @include grid-full           
-            text-align: center
-            margin-bottom: var(--space-xs)
+		&--social ul
+			display: flex
+			min-width: 200px
+			flex-grow: 2
+			justify-content: center
 
-        .attribution
-            font-size: 12px
-            font-style: italic
-            
+			li
+				@include space-inline(var(--space-xs))
+
+		.copyright
+			@include grid-full           
+			text-align: center
+			margin-bottom: var(--space-xs)
+
+		.attribution
+			font-size: 12px
+			font-style: italic
+			
 </style>
